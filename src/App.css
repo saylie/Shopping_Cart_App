@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  margin: 10px;
 }
 
 .App-logo {
@@ -35,4 +38,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.AppTitle{
+  padding: 20px;
+  background-color: coral
+}
+
+.TitleRow{
+  font-weight: 900;
+  padding: 3rem;
+}
+
+.Cart{
+  font-weight: 900;
+  padding: 3rem;
+}
+.Cart label{
+  margin: 10px;
 }

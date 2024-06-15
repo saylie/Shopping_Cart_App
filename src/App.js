@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+import { Provider } from 'react-redux';
 import './App.css';
+import ShoppingApp from './Components/Wrap_Components/ShoppingApp';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import store from './store/store';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <h2 className='AppTitle'>Shopping Cart Application</h2>
+        <ShoppingApp/>
+      </div>
+    </Provider>
   );
 }
 
